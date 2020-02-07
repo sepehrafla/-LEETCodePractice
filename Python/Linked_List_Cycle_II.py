@@ -13,6 +13,6 @@ class Solution(object):
         tag = {}
         while head:
             tag[head] = head
-            if hash_map.get(head.next, 0):
+            if tag.get(head.next, 0):
                 return head.next
             head = head.next
